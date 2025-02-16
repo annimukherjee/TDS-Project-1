@@ -31,7 +31,7 @@ WORKDIR /app
 RUN mkdir -p /data
 
 # Copy the application code into the container
-COPY app.py .env Dockerfile ./
+COPY app.py Dockerfile ./
 
 CMD ["uv", "run", "app.py"]
 
