@@ -1,5 +1,18 @@
 # TDS-Project-1
 
+**An overview**
+
+This repository contains an app I'd written as a part of IIT-M's Tools in Data Science Course. This project is a server that's contained in `app.py`. This server is built using FastAPI. The server has two end-points. The first endpoint is a `/read` endpoint which takes the argument `path`. So requests are usually of the form `http://localhost:8000/read?path=<path of file to read>`. The job of this endpoint is to read the file specified in the path which is provided as the argument. The second endpoint is the `/run` endpoint. This endpoint is reponsible for taking in a request given by the user and executing a task. There are multiple data processing tasks which are defined in natural language and subject to change. We are allowed to make API calls to `gpt-4o-mini` to execute these natuaral language tasks. There are fundamentally two approaches to performing this task then:
+
+1. Pass the natural language task to `gpt-4o-mini` with a elaborate system prompt and get it to write Python code. If there's an error in the code a _reflection_ step can be performed and the LLM can re-write python code to execute the task provided. Not all tasks require Python programmes, some of them require JavaScript code. So the LLM can dynamically handle those use cases.
+2. Use the LLM as a intelligent argument extractor to parse the nuances of the natural language task. Define 20 functions each performing a task as described in the project description (check it out here). Then again, use the LLM to check the prompt, check the list of functions available and make a decision dynamically to call the appropirate function for a given task assigned by the user.
+
+
+I containerized this application and have puhsed the image to [Docker Hub here](https://hub.docker.com/repository/docker/animukh/tds-project-1-final/general).
+
+
+
+
 Pasting the eval.py I used.
 Also pasting the commands I tested the B commands out with here.
 
