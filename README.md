@@ -6,6 +6,10 @@ Also pasting the commands I tested the B commands out with here.
 
 https://hub.docker.com/repository/docker/animukh/tds-project-1-final/general
 
+Here's a link to a Postman Project that contains all the `POST` and `GET` requests to the app using the `/run` and `/read` pipelines.
+
+Link: https://www.postman.com/annimukherjee/tds-project-1/collection/ik46jeo/tds-proj?action=share&creator=24107322
+
 
 ## The EVAL.PY that worked for me:
 
