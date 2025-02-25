@@ -13,10 +13,10 @@ I containerized this application and have puhsed the image to [Docker Hub here](
 
 
 
-Pasting the `eval.py` I used. I tested my `app.py` using this `eval.py` script (stolen from https://github.com/sanand0/tools-in-data-science-public/blob/tds-2025-01-project-1-wip/project-1/evaluate.py)
+Pasting the `eval.py` I used. I tested my `app.py` using this `eval.py` script (stolen from [Dr Anand's public tools-in-data-science repository](https://github.com/sanand0/tools-in-data-science-public/blob/tds-2025-01-project-1-wip/project-1/evaluate.py).)
 
 
-I'm also pasting the post requests I tested the B commands out with here in this README. They're anywyas all in the Postman Collection I've created (linked to below).
+I'm also pasting the post requests I tested the B commands out with here in this README. They're anyways all in the Postman Collection I've created (linked to below).
 
 
 Here's a link to a Postman Project that contains all the `POST` and `GET` requests to the app using the `/run` and `/read` pipelines.
